@@ -135,7 +135,7 @@ letter-spacing: 2px;
 }
 
 .about-text h2{
-	font-size: 30px;
+	font-size: 20px;
 	color: #deafa7;
 	vertical-align: middle;
 	text-align: center;
@@ -146,7 +146,7 @@ letter-spacing: 2px;
 }
 
 .about-text p{
-	font-size: 20px;
+	font-size: 18px;
 	color: #000;
 	vertical-align: middle;
 	margin-top: 5px;
@@ -166,20 +166,20 @@ letter-spacing: 2px;
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 30px;
+	font-size: 20px;
 	margin-top: 15px;
 	padding-top: 15px;
 	font-family: "omnes-pro",sans-serif;
 }
 
 .col-md-3 h3{
-	font-size: 20px;
+	font-size: 16px;
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
 	margin-left: 25px;
 	padding-left: 25px;
-	font-family: "blue-goblet", sans-serif;
+	font-family: "omnes-pro", sans-serif;
 }
 
 /*Best-Seller CSS */
