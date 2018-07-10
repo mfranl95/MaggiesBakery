@@ -1,0 +1,523 @@
+html, body{
+	min-height: 100%;
+}
+
+body{
+	background-color: #f9f8f6;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: #deafa7;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+hr:before { 
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+/*Header CSS */
+#nav {
+width:800px;
+margin:0 auto;
+list-style:none;
+border-top:1px solid #deafa7;
+padding-top: 5px;
+}
+
+#nav li {
+float:left;
+}
+
+#nav a {
+display:block;
+text-align:center;
+width:150px; /* fixed width */
+text-decoration:none; 
+color: #deafa7;
+font-family: "blue-goblet", sans-serif;
+font-size: 18px;
+letter-spacing: 2px;
+
+}
+
+#nav a:hover{
+	color: #000;
+}
+.logo{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 5px;
+	text-align: center;
+	display: block;
+}
+.logo img{
+	margin-left: 25px;
+	text-align: center;
+	width: 120px;
+	height: 80px;
+}
+/* Header Social-Icons CSS */
+.header-social {
+  margin-right: 20px;
+  float: right;
+}
+
+
+.header-social a {
+  margin: 0 5px;
+  padding: 0 5px;
+  display: inline-block;
+  color: #deafa7;
+  position: relative;
+  top: -40px;
+ left: 90px;
+}
+
+.header-social a:hover {
+  color: #021300;
+}
+
+/* Main Area CSS */
+.main-area{
+	background-image: url(https://images.pexels.com/photos/9095/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	margin-top: 30px; 
+}
+
+.main h1{
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 400px;
+	left: 323px;
+	text-shadow: 0.5px 0px;
+	letter-spacing: 1px;
+	font-family: "omnes-pro", sans-serif;
+}
+
+.main p{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+	position: absolute;
+	top: 450px;
+	left: 338px;
+	text-shadow: 0.5px 0px;
+	letter-spacing: 1px;
+	font-family: "blue-goblet",sans-serif;
+}
+
+/*About CSS */
+.about-area{
+	background: #f9f8f6;
+	padding-top: 5px;
+}
+
+.col-lg-6 img{
+	width: 122%;
+}
+
+.about-text h2{
+	font-size: 30px;
+	color: #deafa7;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	float: left;
+	font-family: "omnes-pro",sans-serif;
+}
+
+.about-text p{
+	font-size: 20px;
+	color: #000;
+	vertical-align: middle;
+	margin-top: 5px;
+	padding-top: 10px;
+	float: left;
+	letter-spacing: 2px;
+}
+
+/* Team CSS */
+.team-area{
+	background: #deafa7;
+	width: 100%;
+	padding-top: 1px;
+}
+
+.team-area h2{
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	margin-top: 15px;
+	padding-top: 15px;
+	font-family: "omnes-pro",sans-serif;
+}
+
+.col-md-3 h3{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 25px;
+	padding-left: 25px;
+	font-family: "blue-goblet", sans-serif;
+}
+
+/*Best-Seller CSS */
+
+/*Pastries CSS- Apply to Cake, Cookies and Pies Page */
+.pastry-container{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	padding-top: 15px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.image{
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay{
+	position: absolute;
+	transition: all .3s ease;
+	opacity: 0;
+	background-color: #eee;
+}
+
+.pastry-container:hover .overlay{
+	opacity: 1;
+}
+
+.text{
+	color: #000;
+	font-family: sans-serif;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 16px;
+	vertical-align: middle;
+	text-align: center;
+	widows: 3;
+}
+
+.overlayFade{
+	height: 100%;
+	width: 100%;
+	top:5%;
+	left: 0;
+	background-color: #eeeeeea6;
+
+}
+
+h5{
+	color: #deafa7;
+	font-size: 20px;
+	font-family: "blue-goblet", sans-serif;
+	margin-top: 5px;
+}
+
+.pastry-container:hover .overlayFade{
+	width: 100%;
+}
+
+.header-text h1{
+	float: left;
+	color: #000;
+	margin-top: 15px;
+	margin-left: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 400px;
+	left: 50px;
+	font-size: 40px;
+	text-shadow: 0.5px 0px ;
+	font-family: "omnes-pro",sans-serif;
+}
+
+.header-text p{
+	float: left;
+	color: #000;
+	margin-left: 15px;
+	font-size: 20px;
+	position: absolute;
+	top: 470px;
+	left: 50px;
+}
+
+.price{
+	color: #000;
+	font-size: 15px;
+	font-family: "omnes-pro", sans-serif;
+}
+
+/*Cakes Page CSS */
+
+.cake-banner-area{
+	background: url(https://images.pexels.com/photos/226632/pexels-photo-226632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	margin-top: 30px;
+
+}
+
+
+.cake-area{
+	margin: 0 auto;
+	background: #f9f8f6;
+}
+
+.cake-area h2{
+	font-size: 30px;
+	color: #deafa7;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+	font-family: "omnes-pro",sans-serif;
+}
+
+/*Cookie Page CSS */
+.cookie-banner-area{
+	background: url(https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	margin-top: 30px;
+
+}
+
+.cookie-area{
+	margin: 0 auto;
+	background: #f9f8f6;
+}
+
+.cookie-area h2{
+	font-size: 30px;
+	color: #deafa7;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+	font-family: "omnes-pro",sans-serif;
+}
+
+/*Pie Page CSS */
+.pie-banner-area{
+	background: url(https://images.pexels.com/photos/159887/pexels-photo-159887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	margin-top: 30px;
+
+}
+.pie-area{
+	margin: 0 auto;
+	background: #f9f8f6;
+	padding-top: 5px;
+}
+
+.pie-area h2{
+	font-size: 30px;
+	color: #deafa7;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+	font-family: "omnes-pro",sans-serif;
+}
+
+/*Contact CSS */
+.contact-area{
+	background: #fff;
+	padding-top: 5px;
+}
+
+.col-lg-6 img{
+	width: 122%;
+}
+
+.contact-text h2{
+	font-size: 30px;
+	color: #deafa7;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	float: left;
+	font-family: "omnes-pro",sans-serif;
+}
+
+.contact-text p{
+	font-size: 20px;
+	color: #000;
+	vertical-align: middle;
+	margin-top: 60px;
+	padding-top: 30px;
+	letter-spacing: 2px;	
+}
+
+/*Message Form CSS */
+form{
+  width: 650px;
+  height: 350px;
+  margin: 0px auto;
+  padding: 15px;
+ opacity: 1;
+  box-shadow: 0 0 3px 0px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+.form-group #name{
+  width:75%;
+}
+
+.form-group #email{
+  width:75%;
+}
+
+.form-group #subject{
+  width:75%;
+}
+
+.form-group #message{
+  width:75%;
+  height: 90px;
+}
+
+#message{
+	margin-top: 5px;
+}
+
+form button {
+  background-color: #deafa7;
+  color: #fff;
+  padding: 15px 5px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 20px;
+}
+
+button:hover {
+  background: #43bd8e;
+  color: #fff;
+}
+
+/* Social Media CSS */
+i{
+	color: #deafa7;
+	vertical-align: middle;
+	align-content: center;
+	margin-left: 20px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+i:hover{
+	color: #000;
+}
+
+/*Footer CSS */
+.col-sm-6{
+	margin-left: 0 auto;
+	float: left;
+}
+
+ footer{
+ 	background-color: #deafa7;
+ 	width: 100%;
+ 	height: 270px;
+ 	clear: both;
+ 	position: relative;
+ 	bottom: 0;
+ 	padding-top: 20px;
+ }
+
+ footer, .footer-nav{
+ 	list-style: none;
+ 	margin-top: 5px;
+ }
+
+footer, .footer-nav li a{
+ 	list-style: none;
+ 	margin-top: 5px;
+ 	color: #fff;
+ 	text-align: center;
+ 	padding-top: 5px;
+ }
+
+.footer-nav li a{
+	color: #fff;
+	font-family: "omnes-pro", sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.footer-nav li a:hover{
+	color: #000;
+}
+
+ footer p{
+ 	color: #fff;
+ 	font-size: 16px;
+ 	letter-spacing: 2px;
+ 	margin-top: 25px;
+ 	text-align: center;
+ }
+
+ footer .copyright{
+ 	margin-bottom: 10px;
+ 	padding-top: 15px;
+ }
+
+ .footer-social {
+  margin-right: 20px;
+  float: right;
+}
+
+.footer-social i {
+  margin: 0 5px;
+  padding: 0 5px;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  bottom: 20px;
+ left: 90px;
+}
+
+.footer-social i:hover {
+  color: #021300;
+}
