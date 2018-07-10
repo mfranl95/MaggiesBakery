@@ -45,8 +45,8 @@ text-align:center;
 width:150px; /* fixed width */
 text-decoration:none; 
 color: #deafa7;
-font-family: "blue-goblet", sans-serif;
-font-size: 18px;
+font-family: "omnes-pro", sans-serif;
+font-size: 16px;
 letter-spacing: 2px;
 
 }
@@ -99,7 +99,7 @@ letter-spacing: 2px;
 
 .main h1{
 	color: #fff;
-	font-size: 36px;
+	font-size: 24px;
 	text-align: center;
 	vertical-align: middle;
 	position: absolute;
@@ -112,7 +112,7 @@ letter-spacing: 2px;
 
 .main p{
 	color: #fff;
-	font-size: 30px;
+	font-size: 16px;
 	text-align: center;
 	vertical-align: middle;
 	line-height: 100%;
@@ -121,7 +121,7 @@ letter-spacing: 2px;
 	left: 338px;
 	text-shadow: 0.5px 0px;
 	letter-spacing: 1px;
-	font-family: "blue-goblet",sans-serif;
+	font-family: "omnes-pro",sans-serif;
 }
 
 /*About CSS */
@@ -135,7 +135,7 @@ letter-spacing: 2px;
 }
 
 .about-text h2{
-	font-size: 30px;
+	font-size: 24px;
 	color: #deafa7;
 	vertical-align: middle;
 	text-align: center;
@@ -146,7 +146,8 @@ letter-spacing: 2px;
 }
 
 .about-text p{
-	font-size: 20px;
+	font-size: 16px;
+	font-family:"omnes-pro", sans-serif;
 	color: #000;
 	vertical-align: middle;
 	margin-top: 5px;
@@ -182,7 +183,6 @@ letter-spacing: 2px;
 	font-family: "blue-goblet", sans-serif;
 }
 
-/*Best-Seller CSS */
 
 /*Pastries CSS- Apply to Cake, Cookies and Pies Page */
 .pastry-container{
@@ -237,7 +237,7 @@ letter-spacing: 2px;
 h5{
 	color: #deafa7;
 	font-size: 20px;
-	font-family: "blue-goblet", sans-serif;
+	font-family: "omnes-pro", sans-serif;
 	margin-top: 5px;
 }
 
@@ -373,7 +373,7 @@ h5{
 }
 
 .contact-text h2{
-	font-size: 30px;
+	font-size: 24px;
 	color: #deafa7;
 	vertical-align: middle;
 	text-align: center;
