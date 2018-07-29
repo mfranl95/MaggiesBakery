@@ -5,170 +5,214 @@
 	<meta charset="utf-8">
 	<title>Maggie's Bakery</title>
 
-	<!--Favicon-->
-	
-
 	<!--CSS-->
-	<link rel="stylesheet" href="https://use.typekit.net/fra5dmf.css">
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.typekit.net/rky1oyp.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
-<body id="page-2">
-	<!--Start Header Area-->
-	<div class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="index.html"><img src="img/logo.png"></a>
-			</div>
-			<ul id="nav">
+<body>
+	<!--Header Section-->
+	<header>
+		<img src="img/logo.png" alt="logo" class="logo">
+		<nav class="main">
+			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="cakes.html">Cakes</a></li>
-				<li><a href="cookie.html">Cookies</a></li>
-				<li><a href="pie.html">Pies</a></li>
+				<li><a href="cookies.html">Cookies</a></li>
+				<li><a href="pies.html">Pies</a></li>
 				<li><a href="contact.html">Contact</a></li>
+				
 			</ul>
-			<div class="header-social">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-			</div>
-		</div>		
+		</nav>
+	</header>
+	<!--End Header Section-->
+	<!--Start Category Section-->
+	<div class="cake-container">
+		<nav class="items">
+			<ul>
+				<li><a href="cakes.html#birthday">Birthday</a></li>
+				<li><a href="cakes.html#wedding">Wedding</a></li>
+				<li><a href="cakes.html#custom">Custom</a></li>
+			</ul>
+		</nav>
 	</div>
-	<!--End Header Area-->
-	<!--Start Cakes Area-->
-	<section class="cake-banner-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-7 header-text">
-					<h1>NEW!!!</h1>
-					<p>"Raisin Crumble"</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="cake-area">
-		<h2>Cakes</h2>
+	<!--End Category Section-->
+	<!--Birthday Cake-->
+	<section id="products">
 		<div align="center">
-			<div>
-				<div class="pastry-container">
-					<img src="img/choco-drip.jpg" alt="img" class="image">
-					<h5>Drippin' Smores</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">
-							Enjoy the wonders of camping without leaving the comfort of home with our Drippin' S'mores cake. Made with marshmallow filling and rich Belgian chocolate frosts and is drizzled over the top of the cake.
+			<div class="pastry-container">
+				<a name="birthday"><h2>Birthday Cakes</h2></a>
+				<div class="col-md-4">					
+					<img src="img/double-fudge-bundt.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Double Fudge</h3>
+						<p class="description">Double fudge bundt cake. Frosted with chocolate mousse and with candies</p>
+						<div class="pastry-cost">
+							<h5>$25.00</h5>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<img src="img/fairy-dust.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Fairy Dust</h3>
+						<p class="description">Purple velvet cake.Cream cheese frosting and sprinkled with powdered sugar.</p>
+						<div class="pastry-cost">
+							<h5>$25.00</h5>
 						</div>
 					</div>
 				</div>
-				<div class="pastry-container">
-					<img src="img/cookie's-n-cream.jpg" alt="img" class="image">
-					<h5>Cookies 'n' Cream</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">Who doesn't love cookies 'n' cream? A classic that can never go out of style with our tastebuds.</div>
-					</div>
-				</div>
-				<div class="pastry-container">
-					<img src="img/a-lil-nutty.jpg" alt="img" class="image">
-					<h5>A Lil' Nutty</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">
-                        This chocolate cake is filled with cashews, pecans and almonds and topped with buttercream frosting and mango slices to add a little tang. WARNING: NOT FOR THOSE WITH A NUT ALLERGY!</div>
-					</div>
-				</div>
-				<div class="pastry-container">
-					<img src="img/give-me-the-blues.jpg" alt="img" class="image">
-					<h5>Chocolate Raspberry</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">Move over strawberry, raspberry is taking over. Our simple chocolate raspberry cake is made with both light and dark chocolate. Melted raspberry is drizzled over the top.</div>
-					</div>
-				</div>
-				<div class="pastry-container">
-					<img src="img/cheese-short-strawberry.jpg" alt="img" class="image">
-					<h5>Strawberry Mango Cheesecake</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">A classic with a twist. This traditional cheesecake is frosted with mango-flavored frosting and topped with a slice strawberry.</div>
-					</div>
-				</div>
-				<div class="pastry-container">
-					<img src="img/berry-sweet.jpg" alt="img" class="image">
-					<h5>Berry Fusion</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">For our berry lovers, this cake is for you. Made with blueberries, raspberries, and cherries, Berry Fusion adds a little health to this sweet ordeal.</div>
-					</div>
-				</div>
-				<div class="pastry-container">
-					<img src="img/cinnamon-swirl.jpg" alt="img" class="image">
-					<h5>Cinnamon Swirl Cheesecake</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">Sugar and Spice and oh so nice is the perfect description for our Cinnamon Swirl Cheesecake. Ground Cinnamon covers the top of the cake in elegant designs chosen by you.</div>
-					</div>
-				</div>
-				<div class="pastry-container">
-					<img src="img/nutter-butter.jpg" alt="img" class="image">
-					<h5>Nutter Butter</h5>
-					<p class="price">$45.00</p>
-					<div class="overlay overlayFade">
-						<div class="text">Got a peanut butter fetish? Made with peanut butter filling and peanut butter frosting topped with pecans, this cake puts a new use to peanut butter. WARNING: NOT FOR THOSE WITH A NUT ALLERGY!</div>
+				<div class="col-md-4">
+					<img src="img/pome-delight.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Pomegranate Delight</h3>
+						<p class="description">Buttercream frosting on each layer.Topped with pomegranate slices</p>
+						<div class="pastry-cost">
+							<h5>$25.00</h5>
+						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--End Cakes Area-->
-		<!--Start Footer Area-->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-sm-6">
-					<ul class="footer-nav">
-						<h6>LINKS</h6>
-						<li><a href="index.html#home">Home</a></li>
-						<li><a href="cakes.html#cakes">Cakes</a></li>
-						<li><a href="cookie.html#cookies">Cookies</a></li>
-						<li><a href="pie.html#pies">Pies</a></li>
-						<li><a href="contact.html#contact">Contact</a></li>
-					</ul>
+	<!--End Birthday Cakes-->
+	<!--Wedding Cakes-->
+	<section id="products">
+		<div align="center">
+			<div class="pastry-container">
+				<a name="wedding"><h2>Wedding Cakes</h2></a>
+				<div class="col-md-4">					
+					<img src="img/cherry-mango.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Cherry Mango</h3>
+						<p class="description">Frosted with cream cheese. Topped with thin chocolate, sliced mango and cherries.</p>
+						<div class="pastry-cost">
+							<h5>$45.00</h5>
+						</div>
+					</div>					
 				</div>
-				<div class="col-lg-2 col-sm-6">
-					<ul class="footer-nav">
-						<h6>OUR TEAM</h6>
-						<li><a href="index.html#team">Maggie</a></li>
-						<li><a href="index.html#team">Cheryl</a></li>
-						<li><a href="index.html#team">Stephanie</a></li>
-						<li><a href="index.html#team">Angie</a></li>
-					</ul>
+				<div class="col-md-4">
+					<img src="img/fig-wedding.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Blackberry Fig</h3>
+						<p class="description">Frosted with dulce de leche frosting and decorated with juicy figs and blackberries. </p>
+						<div class="pastry-cost">
+							<h5>$45.00</h5>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-4 col-sm-6">
-					<h6>CONTACT</h6>
-					<p>
-						For More Infromation, contact us at:<br> 
-						646-807-9338<br>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<p class="copyright">Copyright &copyMaggie's Bakery 2014 | ALL RIGHTS RESERVED</p>
-			</div>
-				<div class="footer-social">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-snapchat"></i></a>
+				<div class="col-md-4">
+					<img src="img/velvet-rose.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Velvet Rose</h3>
+						<p class="description">Made with vanilla buttercream frosting and decorated with edible roses. </p>
+						<div class="pastry-cost">
+							<h5>$45.00</h5>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</section>
+	<!--End Wedding Cakes-->
+	<!--Custom Cakes-->
+	<section id="products">
+		<div align="center">
+			<div class="pastry-container">
+				<a name="custom"><h2>Custom Cakes</h2></a>
+				<div class="col-md-4">					
+					<img src="img/choco-drip.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">Drippin' Smores</h3>
+						<p class="description">Enjoy the wonders of camping without leaving the comfort of your home.</p>
+						<div class="pastry-cost">
+							<h5>$25.00</h5>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<img src="img/berry-sweet.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">New!!!-Berry Fusion</h3>
+						<p class="description">Topped with blueberries, raspberries, and cherries and lined with granola.</p>
+						<div class="pastry-cost">
+							<h5>$25.00</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img src="img/a-lil-nutty.jpg">
+					<div class="pastry-info">
+						<h3 class="pastry">A Lil Nutty</h3>
+						<p class="description">Filled with cashews, pecans and almonds, topped with candied oranges.</p>
+						<div class="pastry-cost">
+							<h5>$25.00</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Birthday Section-->
+	<!--Footer Section-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h5 class="footer-title">Store Hours</h5>
+					<ul class="footer-info">
+						<li><strong>Mon-Fri:</strong> 8 AM - 8 PM</li>
+						<li><strong>Sat:</strong> 9 AM - 5 PM</li>
+						<li><strong>Sun:</strong> Closed</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h5 class="footer-title">Our Products</h5>
+					<ul class="footer-info">
+						<li><a href="cakes.html">Cakes</a></li>
+						<li><a href="cookies.html">Cookies</a></li>
+						<li><a href="pies.html">Pies</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h5 class="footer-title">Our Staff</h5>
+					<ul class="footer-info">
+						<li><a href="index.html#staff">Cheryl</a></li>
+						<li><a href="index.html#staff">Stephanie</a></li>
+						<li><a href="index.html#staff">Angie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h5 class="footer-title">Contact</h5>
+					<div class="footer-address">
+						<p class="footer-address">10 E. 5th Street<br> New York, NY 10221</p>
+					</div>
+					<div class="footer-contact">
+						<p class="footer-contact">646-807-9338</p>
+					</div>
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-snapchat"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p class="copyright">Copyright &copyMaggie's Bakery 2018 | ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
 	</footer>
-	<!--End Footer Area-->
-</body>
-	
-	
+	<!--End Footer Section-->
 
+
+</body>
 </html>
