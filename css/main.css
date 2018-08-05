@@ -496,7 +496,8 @@ iframe{
 	color: #deafa7;
 	align-content: center;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 10px;
+	height:auto;
 }
 
 .contact-social {
