@@ -535,12 +535,14 @@ iframe{
 	text-align: left;
 	margin-top: -15px;
 	padding-top: 10px;
+	height: auto;
 }
 
 .footer-info li{
 	list-style: none;
 	margin-left: -40px;
-	padding-top: -15px;
+	height:auto;
+	margin-top: 5px;
 }
 footer{
 	background-color: #deafa7;
