@@ -320,6 +320,8 @@ h4{
 	width:100%;
 	height: 650px;
 	border-bottom: 0.75px solid #deafa7;
+	position:relative;
+	top: 50px;
 }
 
 .pastry-container{
@@ -413,8 +415,10 @@ input.qtyminus {
 .cake-container{
 	background-color: #deafa7;
 	opacity: 0.5;
-	height: 90px;
+	height: 85px;
 	width: 100%;
+	position:relative;
+	top:80px;
 }
 
 .cake-container a:hover{
@@ -454,8 +458,10 @@ input.qtyminus {
 .cookie-container{
 	background-color: #aed5c5;
 	opacity: 0.5;
-	height: 90px;
+	height: 85px;
 	width: 100%;
+	position:relative;
+	top:80px;
 }
 
 .cookie-container a:hover{
@@ -467,8 +473,10 @@ input.qtyminus {
 .pie-container{
 	background-color: #cad8c5;
 	opacity: 0.5;
-	height: 90px;
+	height: 85px;
 	width: 100%;
+	position:relative;
+	top:80px;
 }
 
 .pie-container a:hover{
