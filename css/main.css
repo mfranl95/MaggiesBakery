@@ -80,8 +80,6 @@ header::after{
 	.nav li{
 		width: 100%;
 		display: inline-block;
-		padding-top: 25px;
-		text-align: center;
 	}
 	.main{
 		width: 100%;
