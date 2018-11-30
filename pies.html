@@ -1,212 +1,329 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta charset="utf-8">
 	<title>Maggie's Bakery</title>
-
-	<!--CSS-->
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="https://use.typekit.net/rky1oyp.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/cue.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/mediaelementplayer-legacy.css">
+	<link rel="stylesheet" href="https://use.typekit.net/hpt7tig.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
 </head>
+
 <body>
-	<!--Header Section-->
-	<header>
-		<a href="index.html"><img src="img/logo.png" class="logo"></a>
-		<div class="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="cakes.html">Cakes</a></li>
-				<li><a href="cookies.html">Cookies</a></li>
-				<li><a class="active" href="pies.html">Pies</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image fa-spin"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
 		</div>
-	</header>
-	<header class="pie-container">
-		<nav>
-			<ul>
-				<li><a href="pie.html#fruit">Fruit</a></li>
-				<li><a href="pie.html#seasonal">Seasonal</a></li>
-				<li><a href="pie.html#tarts">Tarts</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!--End Header Section-->
-	<section class="pastry-container">
-		<a name="fruit"><h2>Fruit</h2></a>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12">
-					<img src="img/black-n-blue.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Black 'n' Blue</h3>
-						<p class="description">Made with blueberries and blackberries.Sprinkled with granola chunks.</p>
-						<div class="pastry-cost">
-							<h5>$10.00</h5>
-						</div>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="img/apple-pie.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Apple Pie</h3>
-						<p class="description">A timeless holiday classic. Baked with jonagold apples and gluten-free crust.</p>
-						<div class="pastry-cost">
-							<h5>$10.00</h5>
-						</div>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="img/toasted-meringue.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Lemon Meringue</h3>
-						<p class="description">Made with marshmallow and cream cheese filling. Slightly flambed at the top.</p>
-						<div class="pastry-cost">
-							<h5>$10.00</h5>
-						</div>
-					</div>	
-				</div>
-			</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
 		</div>
-	</section>
-	
-	<section class="pastry-container">
-		<a name="seasonal"><h2>Seasonal</h2></a>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12">
-					<img src="img/mango-pecan.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">New!- Mango Pecan</h3>
-						<p class="description">Pumpkin pie with a twist. Topped with sliced mangos, berries, and cashews.</p>
-						<div class="pastry-cost">
-							<h5>$10.00</h5>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+						<header class="page_header header_darkgrey background_cover toggler_xs_right tall_header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell"> <a href="index.html" class="logo top_logo">
+                        <img src="images/logo.png" alt="">
+                    </a> </div>
+							<div class="header_mainmenu display_table_cell text-right">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li> <a href="index.html">Home</a>
+										</li>
+										<li  > <a href="cakes.html">Cakes</a>
+											<ul>
+												<!-- eof features -->
+												<li> <a href="cakes.html#birthday">Birthday</a> </li>
+												<li> <a href="cakes.html">Custom</a> </li>
+												<li> <a href="cakes.html">Wedding</a> </li>
+											</ul>
+										</li>
+										<!-- eof pages -->
+										<li> <a href="cookies.html">Cookies</a>
+											<ul>
+												<li> <a href="cookies.html#chip">Chocolate Chip</a> </li>
+												<li> <a href="cookies.html#macaroons">Macaroons</a> </li>
+											</ul>
+										</li>
+										<li class="active"> <a href="pies.html">Pies</a>
+											<ul>
+												<!-- eof features -->
+												<li> <a href="pies.html#fruit">Fruit</a> </li>
+												<li> <a href="pies.html#easonal">Seasonal</a> </li>
+												<li> <a href="pies.html#tart">Tarts</a> </li>
+											</ul>
+										</li>
+										<!-- eof shop -->
+										<!-- contacts -->
+										<li> <a href="contact.html">Contact</a>
+										</li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
 						</div>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="img/choco-cinnamon.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Brown Sugar</h3>
-						<p class="description">Chocolate and pecan pie. Glazed cinnamon and brown sugar drizzled over the crust.</p>
-						<div class="pastry-cost">
-							<h5>$10.00</h5>
-						</div>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="img/cherry-crumble.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Rhubarb Crumble</h3>
-						<p class="description">Filled with kiwi, mango and raspberry chunks. Topped with butter pecan ice cream..</p>
-						<div class="pastry-cost">
-							<h5>$10.00</h5>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="pastry-container">
-		<a name="tarts"><h2>Tarts</h2></a>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12">
-					<img src="img/berry-tart.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Berry Tart</h3>
-						<p class="description">Strawberry and blueberry tart topped with cream cheese.</p>
-						<div class="pastry-cost">
-							<h5>$7.00</h5>
-						</div>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="img/tropical-tart.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Mini Tropical Tart</h3>
-						<p class="description">Enjoy a taste of paradise. Made with fresh kiwis and sliced strawberries.</p>
-						<div class="pastry-cost">
-							<h5>$7.00</h5>
-						</div>
-					</div>	
-				</div>
-				<div class="col-md-4 col-sm-12">
-					<img src="img/pecan-tart.jpg">
-					<div class="pastry-info">
-						<h3 class="pastry">Sugar Pecan Tart</h3>
-						<p class="description">Almond and pecan-flavored tart. Topped with peanuts and sprinkled with brown sugar</p>
-						<div class="pastry-cost">
-							<h5>$7.00</h5>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-	
-
-	<!--Footer Section-->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<h5 class="footer-title">Store Hours</h5>
-					<ul class="footer-info">
-						<li><strong>Mon-Fri:</strong> 8 AM - 8 PM</li>
-						<li><strong>Sat:</strong> 9 AM - 5 PM</li>
-						<li><strong>Sun:</strong> Closed</li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="footer-title">Our Products</h5>
-					<ul class="footer-info">
-						<li><a href="cakes.html">Cakes</a></li>
-						<li><a href="cookies.html">Cookies</a></li>
-						<li><a href="pies.html">Pies</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="footer-title">Our Staff</h5>
-					<ul class="footer-info">
-						<li><a href="index.html#staff">Cheryl</a></li>
-						<li><a href="index.html#staff">Stephanie</a></li>
-						<li><a href="index.html#staff">Angie</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="footer-title">Contact</h5>
-					<div class="footer-address">
-						<p class="footer-address">10 E. 5th Street<br> New York, NY 10221</p>
-					</div>
-					<div class="footer-contact">
-						<p class="footer-contact">646-807-9338</p>
-					</div>
-					<div class="footer-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-snapchat"></i></a>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<p class="copyright">Copyright &copyMaggie's Bakery 2018 | ALL RIGHTS RESERVED</p>
-			</div>
+			</header>
+			<section id="about" class="ls ms page_about parallax section_padding_top_130 section_padding_bottom_75 table_section table_section_md columns_margin_bottom_30" style="background-image: url(img/pie-about.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="section_header" style="color: #fff;">Pies</h2>
+							<p>Pies that will make you the star of your next party.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls ms page_portfolio section_padding_top_150 section_padding_bottom_130 page_footer" name="fruit">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="section_header text-center">Fruit</h2>
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/blue.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="3">Black 'n' Blue-$10.00</a> </h4>
+											<p class="small-text highlight">Made with blueberries and blackberries.Sprinkled with granola chunks.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a> 
+											 </div>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/apple.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Apple-$10.00</a> </h4>
+											<p class="small-text highlight">A timeless holiday classic. Baked with jonagold apples and gluten-free crust.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a>  
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/meringue.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#"> Lemon Meringue-$10.00</a> </h4>
+											<p class="small-text highlight">Made with marshmallow and cream cheese filling. Slightly flambed at the top.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a>  
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- eof .isotope_container.row -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls ms page_portfolio section_padding_top_150 section_padding_bottom_130 page_footer" name="seasonal">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="section_header text-center">Seasonal</h2>
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/pecan.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="3">New! Mango Pecan-$15.00</a> </h4>
+											<p class="small-text highlight">Pumpkin pie with a twist. Topped with sliced mangos, berries, and cashews.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/brown.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Brown Sugar-$15.00</a> </h4>
+											<p class="small-text highlight">Chocolate and pecan pie. Glazed cinnamon and brown sugar drizzled over the crust.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/rhubarb.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Rhubarb Crumble-$15.00</a> </h4>
+											<p class="small-text highlight">Filled with kiwi, mango and raspberry chunks. Topped with butter pecan ice cream.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a> 
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- eof .isotope_container.row -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls ms page_portfolio section_padding_top_150 section_padding_bottom_130 page_footer" name="tart">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="section_header text-center" >Tarts</h2>
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/berry.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="3">Berry Tart-$7.00</a> </h4>
+											<p class="small-text highlight">Strawberry and blueberry tart topped with cream cheese.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/tropical.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Tropical Tart-$7.00</a> </h4>
+											<p class="small-text highlight">Enjoy a taste of paradise. Made with fresh kiwis and sliced strawberries.</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/sugar-pecan.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Sugar Pecan-$7.00</a> </h4>
+											<p class="small-text highlight">Almond and pecan-flavored tart. Topped with peanuts and sprinkled with brown sugar</p>
+											<div class="pricing rounded"> 
+												<a href="checkout.html">Place Order</a> 
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- eof .isotope_container.row -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ls section_padding_top_100 section_padding_bottom_100 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Contact </h4>
+								<div>
+									<div class="media small-media inline-block">
+										<div class="media-left"> <i class="fa fa-map-marker highlight" aria-hidden="true"></i> </div>
+										<div class="media-body"> 10 E. 5th Street New York, NY 10221 </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-left"> <i class="fa fa-phone highlight" aria-hidden="true"></i> </div>
+										<div class="media-body"> 646-807-9338 </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-left"> <i class="fa fa-pencil highlight" aria-hidden="true"></i> </div>
+										<div class="media-body"> info@maggie'sbakery.com </div>
+									</div><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Store Hours </h4>
+								<div>
+									<div class="media small-media inline-block">
+										<div class="media-body"> <strong>Monday-Friday:</strong> 8 AM-8PM </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-body"> <strong>Saturday:</strong> 9 AM-5 PM  </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-body"> <strong>Sunday:</strong> CLOSED  </div>
+									</div><br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ls ms page_copyright section_padding_top_40 section_padding_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>&copy; Maggie's Bakery 2018. All Rights Reserved.</p>
+							<div> <a class="social-icon color-bg-icon round-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon color-bg-icon round-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon color-bg-icon round-icon socicon-instagram"
+								    href="#" title="Instagram"></a> </div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-	</footer>
-	<!--End Footer Section-->
-
-
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
