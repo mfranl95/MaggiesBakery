@@ -1,160 +1,311 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta charset="utf-8">
 	<title>Maggie's Bakery</title>
-
-	<!--CSS-->
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="https://use.typekit.net/rky1oyp.css">
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="js/scroll-down.js"></script>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/cue.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/mediaelementplayer-legacy.css">
+	<link rel="stylesheet" href="https://use.typekit.net/hpt7tig.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
 </head>
+
 <body>
-	<header>
-		<a href="index.html"><img src="img/logo.png" class="logo"></a>
-		<div class="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="cakes.html">Cakes</a></li>
-				<li><a href="cookies.html">Cookies</a></li>
-				<li><a href="pies.html">Pies</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image fa-spin"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
 		</div>
-	</header>
-	<section class="main">
-		<img src="img/main.jpg">
-		<h1>Nourish Your Sweet Side</h1>
-		<a class="btn" href="#section2">START INDULGING</a>
-	</section>
-
-	<section class="section2">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>About</h2>
-					<p class="info">Maggie's Bakery is a family-owned bakery located in Greenwich Village. What makes Maggie's Bakery different from other bakeries in the New York Area is our willingness to be creative with our recipes. Our motto is "Nourish Your Sweet Side" because our delectable pastries will leave our customers 100% satisfied.</p>
-				</div>
-			</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
 		</div>
-	</section>
-
-	<section class="section3">
-		<div class="container">
-			<h2>Staff</h2>
-			<div class="row">
-				<div class="col-md-4">
-					<img src="img/owner.jpg">
-					<h4>Cheryl-Owner</h4>	
-				</div>
-				<div class="col-md-4">
-					<img src="img/chef.jpg">
-					<h4>Stephanie-Chef</h4>	
-				</div>
-				<div class="col-md-4">
-					<img src="img/decorator.jpg">
-					<h4>Angie-Decorator</h4>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Team Section-->
-	<!--Start Pastries Section-->
-	<section class="section4">
-		<div class="container">
-			<h2>Pastries</h2>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<h3>Cakes</h3>
-					<a href="cakes.html">
-						<div class="cake-bg">
-							<img src="img/cake-bg.jpg">
-							<a class="btn-shop" href="cakes.html">Try Our Custom Cakes!</a>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<header class="page_header header_darkgrey background_cover toggler_xs_right tall_header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell"> <a href="index.html" class="logo top_logo">
+                        <img src="images/logo.png" alt="">
+                    </a> </div>
+							<div class="header_mainmenu display_table_cell text-right">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active"> <a href="index.html">Home</a>
+										</li>
+										<li> <a href="cakes.html">Cakes</a>
+											<ul>
+												<!-- eof features -->
+												<li> <a href="cakes.html#birthday">Birthday</a> </li>
+												<li> <a href="cakes.html#custom">Custom</a> </li>
+												<li> <a href="cakes.html#wedding">Wedding</a> </li>
+											</ul>
+										</li>
+										<!-- eof pages -->
+										<li> <a href="cookies.html">Cookies</a>
+											<ul>
+												<li> <a href="cookies.html#chip">Chocolate Chip</a> </li>
+												<li> <a href="cookies.html#macaroons">Macaroons</a> </li>
+											</ul>
+										</li>
+										<li> <a href="pies.html">Pies</a>
+											<ul>
+												<!-- eof features -->
+												<li> <a href="pies.html#fruit">Fruit</a> </li>
+												<li> <a href="pies.html#seasonal">Seasonal</a> </li>
+												<li> <a href="pies.html#tart">Tarts</a> </li>
+											</ul>
+										</li>
+										<!-- eof shop -->
+										<!-- contacts -->
+										<li> <a href="contact.html">Contact</a>
+										</li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
 						</div>
-					</a>
-				</div>				
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<h3>Cookies</h3>
-					<a href="cookies.html">
-						<div class="cookie-bg">
-							<img src="img/cookie-bg.jpg">
-							<a class="btn-shop" href="cookies.html">Indulge Our Cookies!</a>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					<h3>Pies</h3>
-					<a href="pies.html">
-						<div class="pie-bg">
-							<img src="img/pie-bg.jpg">
-							<a class="btn-shop" href="pies.html">Shop Our Cookies!</a>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--End Pastries Section-->
-	<!--Footer Section-->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<h5 class="footer-title">Store Hours</h5>
-					<ul class="footer-info">
-						<li><strong>Mon-Fri:</strong> 8 AM - 8 PM</li>
-						<li><strong>Sat:</strong> 9 AM - 5 PM</li>
-						<li><strong>Sun:</strong> Closed</li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="footer-title">Our Products</h5>
-					<ul class="footer-info">
-						<li><a href="cakes.html">Cakes</a></li>
-						<li><a href="cookies.html">Cookies</a></li>
-						<li><a href="pies.html">Pies</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="footer-title">Our Staff</h5>
-					<ul class="footer-info">
-						<li><a href="index.html#staff">Cheryl</a></li>
-						<li><a href="index.html#staff">Stephanie</a></li>
-						<li><a href="index.html#staff">Angie</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="footer-title">Contact</h5>
-					<div class="footer-address">
-						<p class="footer-address">10 E. 5th Street<br> New York, NY 10221</p>
-					</div>
-					<div class="footer-contact">
-						<p class="footer-contact">646-807-9338</p>
-					</div>
-					<div class="footer-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-snapchat"></i></a>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<p class="copyright">Copyright &copyMaggie's Bakery 2018 | ALL RIGHTS RESERVED</p>
-			</div>
+			</header>
+			<section class="intro_section page_mainslider ds">
+				<div class="flexslider" data-dots="true" data-nav="te">
+					<ul class="slides">
+						<li> <img src="img/main.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer">
+													<h2> Maggie's Bakery </h2>
+												</div>
+											</div>
+											<div class="entry-content">
+												<span class="button_wrap">
+													<a href="cakes.html" class="theme-button color1">Nourish Your Sweet Side</a>
+												</span> 
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+					</ul>
+				</div>
+				<!-- eof flexslider -->
+			</section>
+			<section id="about" class="ls ms page_about parallax section_padding_top_130 section_padding_bottom_75 table_section table_section_md columns_margin_bottom_30" style="background-color: #ffc8c3;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="section_header">About</h2>
+							<p style="color: #000;">Maggie's Bakery is a family-owned bakery located in Greenwich Village. What makes Maggie's Bakery different from other bakeries in the New York Area is our willingness to be creative with our recipes. Our motto is "Nourish Your Sweet Side" because our delectable pastries will leave our customers 100% satisfied.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls ms page_portfolio section_padding_top_150 section_padding_bottom_130">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="section_header text-center">Staff</h2>
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/team/owner.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="3">Cheryl</a> </h4>
+											<p class="small-text highlight" style="color:#ffc8c3;">Owner</p>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/team/chef.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Stephanie</a> </h4>
+											<p class="small-text highlight" style="color:#ffc8c3;">Chef</p>
+										</div>
+									</div>
+								</div>
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-6">
+									<div class="vertical-item content-padding with_background rounded text-center">
+										<div class="item-media"> <img src="images/team/decorator.jpg" alt=""> </div>
+										<div class="item-content">
+											<h4 class="entry-title bottommargin_0"> <a href="#">Angie</a> </h4>
+											<p class="small-text highlight" style="color:#ffc8c3;">Decorator</p>
+										</div>
+									</div>
+								</div>
+							<!-- eof .isotope_container.row -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="news" class="ls ms section_padding_top_150 section_padding_bottom_130" style="background-image: url(images/pastries.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_headers" style="color: #fff;">Pastries</h2>
+							<div class="owl-carousel topmargin_60" data-responsive-lg="3" data-dots="true">
+								<article class="vertical-item content-padding with_background rounded text-center offset_button">
+									<div class="item-media top_rounded overflow_hidden"> <img src="images/gallery/cakes.jpg" alt="">
+										<div class="media-links"> <a href="cakes.html" class="abs-link"></a> </div>
+									</div>
+									<div class="item-content">
+										<header class="entry-header">
+											<h4 class="entry-title"> <a href="cakes.html">Cakes</a> </h4>
+										</header>
+										<div class="entry-content">
+											<span class="button_wrap">
+									<a href="cakes.html" class="theme_button color1">Try Our Custom Cakes!</a>
+								</span> </div>
+									</div>
+								</article>
+								<article class="vertical-item content-padding with_background rounded text-center offset_button">
+									<div class="item-media top_rounded overflow_hidden"> <img src="images/gallery/cookies.jpg" alt="">
+										<div class="media-links"> <a href="cookies.html" class="abs-link"></a> </div>
+									</div>
+									<div class="item-content">
+										<header class="entry-header">
+											<h4 class="entry-title"> <a href="cookies.html">Cookies</a> </h4>
+										</header>
+										<div class="entry-content">
+											<span class="button_wrap">
+									<a href="cookies.html" class="theme_button color1">Indulge Our Cookies!</a>
+								</span> </div>
+									</div>
+								</article>
+								<article class="vertical-item content-padding with_background rounded text-center offset_button">
+									<div class="item-media top_rounded overflow_hidden"> <img src="images/gallery/pies.jpg" alt="">
+										<div class="media-links"> <a href="pies.html" class="abs-link"></a> </div>
+									</div>
+									<div class="item-content">
+										<header class="entry-header">
+											<h4 class="entry-title"> <a href="pies.html">Pies</a> </h4>
+										</header>
+										<div class="entry-content">
+											<span class="button_wrap">
+									<a href="pies.html" class="theme_button color1">Shop Our Pies!</a>
+								</span> </div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ls section_padding_top_100 section_padding_bottom_100 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Contact </h4>
+								<div>
+									<div class="media small-media inline-block">
+										<div class="media-left"> <i class="fa fa-map-marker highlight" aria-hidden="true"></i> </div>
+										<div class="media-body"> 10 E. 5th Street New York, NY 10221 </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-left"> <i class="fa fa-phone highlight" aria-hidden="true"></i> </div>
+										<div class="media-body"> 646-807-9338 </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-left"> <i class="fa fa-pencil highlight" aria-hidden="true"></i> </div>
+										<div class="media-body"> info@maggie'sbakery.com </div>
+									</div><br>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Store Hours </h4>
+								<div>
+									<div class="media small-media inline-block">
+										<div class="media-body"> <strong>Monday-Friday:</strong> 8 AM-8PM </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-body"> <strong>Saturday:</strong> 9 AM-5 PM  </div>
+									</div><br>
+									<div class="media small-media inline-block">
+										<div class="media-body"> <strong>Sunday:</strong> CLOSED  </div>
+									</div><br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ls ms page_copyright section_padding_top_40 section_padding_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>&copy; Maggie's Bakery 2018. All Rights Reserved.</p>
+							<div> <a class="social-icon color-bg-icon round-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon color-bg-icon round-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon color-bg-icon round-icon socicon-instagram"
+								    href="#" title="Instagram"></a> </div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-	</footer>
-	<!--End Footer Section-->
-
-
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
